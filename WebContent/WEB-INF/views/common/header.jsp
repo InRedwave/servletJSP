@@ -14,11 +14,10 @@
 	<body>
 		<div class="d-flex flex-column vh-100">
 			<nav class="navbar navbar-dark bg-dark text-white font-weight-bold">
-				<a class="navbar-brand" href="/"> 
+				<a class="navbar-brand" href="/servletjsp/HomeController"> 
 					<img src="/servletjsp/resources/images/tomcat.png" width="40" height="30" class="d-inline-block align-top">
 					Servlet/JSP
-				</a>
-				<div>
+				</a>				<div>
 					<div>
 						<a href="#" class="btn btn-success btn-sm">로그인</a>
 					</div>

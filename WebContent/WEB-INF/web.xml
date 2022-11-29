@@ -9,13 +9,43 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  
   <servlet>
     <servlet-name>HomeController</servlet-name>
     <servlet-class>servlet.HomeController</servlet-class>
     <load-on-startup>1</load-on-startup>
   </servlet>
+  
   <servlet-mapping>
     <servlet-name>HomeController</servlet-name>
     <url-pattern>/HomeController</url-pattern>
   </servlet-mapping>
+  
+  
+   <servlet>
+   
+    <servlet-name>exam03.ContentController</servlet-name>
+    <servlet-class>servlet.exam03.ContentController</servlet-class>
+    
+    <init-param>
+    	<param-name>encoding</param-name>
+    	<param-value>UTF-8</param-value>
+    </init-param>
+     <init-param>
+    	<param-name>viewLocation</param-name>
+    	<param-value>/WEB-INF/views</param-value>
+    </init-param>
+    
+    <load-on-startup>1</load-on-startup>
+    
+  </servlet>
+  
+  
+  
+  <servlet-mapping>
+    <servlet-name>exam03.ContentController</servlet-name>
+    <url-pattern>/exam03/ContentController</url-pattern>
+  </servlet-mapping>
+  
+  
 </web-app>

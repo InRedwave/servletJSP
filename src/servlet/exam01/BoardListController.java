@@ -17,12 +17,6 @@ import dto.Board;
 @WebServlet(name = "exam01.BoardListController", urlPatterns = "/exam01/BoardListController")
 public class BoardListController extends HttpServlet {
 	@Override
-	public void init(ServletConfig config) throws ServletException {
-
-		System.out.println("BoardListController.init() 실행");
-	}
-
-	@Override
 	protected void service(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
@@ -47,9 +41,5 @@ public class BoardListController extends HttpServlet {
 		request.getRequestDispatcher("/WEB-INF/views/exam01/boardList.jsp").forward(request, response);
 	}
 
-	@Override
-	public void destroy() {
-		System.out.println("BoardListController.destory() 실행");
-	}
 
 }
